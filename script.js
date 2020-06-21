@@ -47,15 +47,14 @@ const addNewLinks = () => {
     URL: urlOflinks,
     author: authorOflinks,
   };
-  let https = "//https://";
+  
   if(!String.prototype.startsWith){
-    yourLink(String.prototype, { startsWith: https});
+    let https = "https://"
+    yourLink.startsWith("https://");
   }
-
+  console.log(yourLink)
+ 
 };
-
-
-
 
 // Function if you want to quit the page
 const Quit = () => {
