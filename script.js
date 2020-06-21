@@ -11,12 +11,7 @@ console.log('it works!');
     {title : "Thief",
     URL : "//http://police.com",
     author : "Bio"},
-    {title : "Tricker",
-    URL : "//http://sly.com",
-    author : "Pio"},
-    {title : "Trust 0",
-    URL : "//http://trust.com",
-    author : "Rao"}]
+     ]
   
 
 // This shows the menu of the web
@@ -40,24 +35,27 @@ const structureOfEachPage = () => {
     alert(possiblelinks);
   }
 };
+
 // Function for adding a new links
+
 const addNewLinks = () => {
   const titlelinks = prompt("Give the title of your links");
-  const urlOflinks = prompt("Give the url of your links");
   const authorOflinks = prompt("Who is the author of your links");
+  const urlOflinks = prompt("Give the url of your links");
   let yourLink = {
     title: titlelinks,
     URL: urlOflinks,
     author: authorOflinks,
   };
-  if(URL !== https && URL !== http){
-    yourLink =(`//https: ${yourLink}`) 
+  let https = "//https://";
+  if(!String.prototype.startsWith){
+    yourLink(String.prototype, { startsWith: https});
   }
-  listOfLinks.push(yourLink);
-  return;
 
 };
-console.log(addNewLinks);
+
+
+
 
 // Function if you want to quit the page
 const Quit = () => {
@@ -74,9 +72,9 @@ switch (optionlist) {
     addNewLinks();
     break;
   case 3: 
-  let removeLink = Number(prompt(`Number of index you want to delete(1 to ${listOfLinks.length})`));
-  let linkdeleted = listOfLinks.splice(removeLink , 1);
-  alert(`you deleted ${linkdeleted[0].title}`);
+    let removeLink = Number(prompt(`Number of index you want to delete(1 to ${listOfLinks.length})`));
+    let linkdeleted = listOfLinks.splice(removeLink , 1);
+    alert(`you deleted ${linkdeleted[0].title}`);
     break;
   case 0:
      quit();
@@ -89,5 +87,5 @@ optionlist = Number(prompt(options));
 
 
 
-  
+ 
 
