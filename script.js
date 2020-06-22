@@ -48,9 +48,10 @@ const addNewLinks = () => {
     author: authorOflinks,
   };
   
-  if(!String.prototype.startsWith){
-    let https = "https://"
+  if(!String.prototype.startsWith){ 
+    urlOflinks();
     yourLink.startsWith("https://");
+    
   }
   console.log(yourLink)
  
